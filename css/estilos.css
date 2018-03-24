@@ -1,0 +1,376 @@
+/*Para importar las fuentes descargadas y poderlas usar*/
+@font-face {
+	font-family : fu1;
+	src : url('../fonts/HelloJumpingJacks.ttf');
+}
+
+@font-face {
+	font-family : fu2;
+	src : url('../fonts/Carolina_Valtuille.ttf');
+}
+/*Imágenes de fondo para cada una de las páginas*/
+body.fondoInicio{
+	font-family : fu1;
+	background: url('../img/budapest.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height : 100%;
+}
+
+body.fondoDatos{
+	font-family : fu1;
+	background: url('../img/379120-svetik.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height : 100%
+}
+
+body.fondoTerritorio{
+	font-family : fu1;
+	background: url('../img/nighthungary.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height : 100%
+}
+
+body.fondoIdioma{
+	font-family : fu1;
+	background: url('../img/Vonyarcvashegy.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height : 100%
+}
+
+body.fondoCredito{
+	font-family : fu1;
+	background: url('../img/Visegrad.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height : 100%
+}
+
+body.fondoMapa{
+	font-family : fu1;
+	background: url('../img/Budapest_Parliament_amk.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height : 100%
+}
+
+/*Barra de navegación*/
+.nav {
+	list-style-type: none;
+	overflow : hidden;
+	background-color : #333333;
+	border-radius : 10px;
+	border-style : groove;
+	opacity : 0.9;
+}
+
+.nav li a{
+	float: left;
+	color : white;
+	display : block;
+	text-align : center;
+	padding : 14px;
+	text-decoration : none;
+	font-weight : 900;
+	font-size : 17px;
+}
+
+.nav li a:hover {
+	background-color : #4CAF50;
+}
+
+/*Pequeño gif que se enceuntra en el botón de Hungría (Parte superior izquierda)*/
+.hungarygif {
+	width : 50px;
+	height : 16px;
+}
+
+/*Layout para la página de inicio*/
+.inicio {
+	font-family : fu2;
+	color : white;
+	font-weight: bold;
+	margin-left: 100px;
+	margin-right: auto;
+	width : 700px;
+	height: 300px;
+	font-variant : small-caps;
+	align-content: center;
+}
+
+.inicio h1 {
+	font-size : 100px;
+	word-spacing: 0.25em;
+}
+
+.inicio p {
+	font-size: 45px;
+	word-spacing: 0.25em;
+}
+
+/*Layout para los contenidos de las demás páginas html*/
+.contenido {
+	font-family: fu2;
+	background-color: rgba(0, 0, 0, 0.85);
+	color : white;
+	font-size : 30px;
+	border-radius : 10px;
+	border-style : groove;
+	width: 830px;
+	height: 550px;
+	overflow-y: auto;
+	float: right;
+}
+.contenido h1 {
+	text-align: center;
+}
+
+/*Barra lateral para poder navegar por las diferentes secciones en cada página*/
+
+.barra{
+   width: 155px;
+   background-color: rgba(0,0,0,1);
+   float: left;
+   font-family: fu2;
+}
+
+/*Para el título de la barra lateral*/
+
+.titulobar{  
+   font-size: 16pt;
+   font-weight: bold;
+   background-color: #e0e0e0;
+   color: #000;
+   padding: 4px;
+}
+
+/*Para el contenido de la barra lateral*/
+
+.cuerporec{
+   margin-top: 0px;
+   margin-right: 0pt;
+   margin-bottom: 0px;
+   margin-left: 0pt;
+}
+
+.cuerporec ul{
+   margin-top: 0px;
+   margin-right: 0px;
+   margin-bottom: 0px;
+   margin-left: 0px;
+   padding-top: 0pt;
+   padding-right: 0pt;
+   padding-bottom: 0pt;
+   padding-left: 0px;
+   list-style-type: none;
+   list-style-image: none;
+   list-style-position: outside;
+}
+
+.cuerporec li{
+   border-bottom: 1px solid #d7d7d7;   
+   border-left: 1px solid #d7d7d7;   
+   border-right: 1px solid #d7d7d7;   
+   padding: 1px 0 2px 4px;
+   font-size: 16pt;
+   margin-top: 0px;
+   margin-right: 0pt;
+   margin-bottom: 0px;
+   margin-left: 0pt;
+   background-color: rgba(0,0,0,1);
+}
+
+.cuerporec a{
+	display: block;
+   text-decoration: none;
+   color: white;
+}
+
+/*Cuando se pasa el mouse por la barra lateral*/
+
+.cuerporec a:hover {
+	background-color : #4CAF50;
+	width: 100%;
+}
+
+/*Estilo para las imágenes a la derecha del texto*/
+
+.figure1{
+	float: right;
+	padding: 0.5em;
+}
+
+.figure1 p {
+	text-align: center;
+	font-style: italic;
+	font-size: smaller;
+	text-indent: 0;
+	margin : 0;
+}
+
+.figure1.scaled{
+	width: 100%;
+}
+
+/*Estilos para las imágenes centradas (.figure2 y .figure3)*/
+
+.figure2 {
+	padding: 0.5em;
+}
+
+.figure2 img {
+	width: 500px;
+	height: 328px;
+	margin: 0 auto;
+	display: block;
+	background-color: rgba(255, 255, 255, 1);
+}
+
+.figure2 p {
+	text-align: center;
+	font-style: italic;
+	font-size: smaller;
+	text-indent: 0;
+	margin : 0;
+}
+
+.figure2.scaled{
+	width: 100%;
+}
+
+.figure3 img {
+	width: 800px;
+	height: 390px;
+	margin: 0 auto;
+	display: block;
+	background-color: rgba(255, 255, 255, 0);
+}
+
+.figure3 p {
+	text-align: center;
+	font-style: italic;
+	font-size: smaller;
+	text-indent: 0;
+	margin : 0;
+}
+
+.figure3.scaled{
+	width: 100%;
+}
+
+/*Estilo para la tabla que aparece en la sección organizacion territorial*/
+.datagrid table { 
+	border-collapse: collapse; 
+	text-align: left; 
+	width: 100%;
+	margin: 0px, 1px. 0px, 1px; 
+} 
+.datagrid {
+	font: normal 12px/150% Arial, Helvetica, sans-serif; 
+	background: #fff; 
+	overflow: hidden; 
+	border: 5px solid #36752D; 
+	-webkit-border-radius: 9px; 
+	-moz-border-radius: 9px; 
+	border-radius: 9px; 
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.datagrid table td, .datagrid table th { 
+	padding: 6px 4px; 
+}
+.datagrid table thead th {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #36752D), color-stop(1, #275420) );
+	background:-moz-linear-gradient( center top, #36752D 5%, #275420 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#36752D', endColorstr='#275420');
+	background-color:#36752D; 
+	color:#FFFFFF; 
+	font-size: 13px; 
+	font-weight: bold; 
+	border-left: 3px solid #36752D; 
+} 
+.datagrid table thead th:first-child { 
+	border: none; 
+}
+.datagrid table tbody td{ 
+	color: #275420; 
+	border-left: 3px solid #C6FFC2;
+	font-size: 12px;
+	font-weight: normal; 
+}
+.datagrid table tbody .alt td { 
+	background: #DFFFDE; 
+	color: #275420; 
+}
+
+.datagrid table tbody td a {
+	color: #275420;
+}
+
+.datagrid table tbody .alt td a{
+	color: #275420;
+}
+
+.datagrid table tbody td:first-child { 
+	border-left: none; 
+}
+.datagrid table tbody tr:last-child td { 
+	border-bottom: none; 
+}
+
+/*Estilos para los links en la página web*/
+.ref li a{
+	color: green;
+}
+/*Configuracion para pantallas pequeñas*/
+@media screen and (max-width: 480px) {
+	
+	.inicio {
+		width: 100%;
+		margin: 10px;
+	}
+
+	.nav li a{
+		float: none;
+	}
+
+	.contenido {
+		width:100%;
+		height: 100%;
+		float:none;
+	}
+
+	.barra {
+		float: none;
+		width:100%;
+		text-align: center;
+		margin-bottom: 5px;
+	}
+	.figure2 img{
+		width: 100%; 
+	}
+
+	.datagrid {
+		width:100%;
+	}
+
+	.figure3 img{
+		width: 100%;
+	}
+}
